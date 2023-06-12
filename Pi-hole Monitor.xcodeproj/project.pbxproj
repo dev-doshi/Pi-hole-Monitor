@@ -1,0 +1,398 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		13E1BD212A37AEC100C9888A /* Pi_hole_MonitorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E1BD202A37AEC100C9888A /* Pi_hole_MonitorApp.swift */; };
+		13E1BD232A37AEC100C9888A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E1BD222A37AEC100C9888A /* ContentView.swift */; };
+		13E1BD252A37AEC200C9888A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13E1BD242A37AEC200C9888A /* Assets.xcassets */; };
+		13E1BD282A37AEC200C9888A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13E1BD272A37AEC200C9888A /* Preview Assets.xcassets */; };
+		13E1BD2A2A37AEC200C9888A /* Raspi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E1BD292A37AEC200C9888A /* Raspi.swift */; };
+		13E1BD372A38FCDD00C9888A /* RaspiDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E1BD362A38FCDD00C9888A /* RaspiDetailView.swift */; };
+		13E1BD3C2A3A069E00C9888A /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E1BD3B2A3A069E00C9888A /* DataService.swift */; };
+		13E1BD3F2A3A4CEF00C9888A /* DashBoardCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E1BD3E2A3A4CEF00C9888A /* DashBoardCardView.swift */; };
+		13E756222A3DD1DE00B09504 /* DashBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E756212A3DD1DE00B09504 /* DashBoardView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		13E1BD1D2A37AEC100C9888A /* Pi-hole Monitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pi-hole Monitor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		13E1BD202A37AEC100C9888A /* Pi_hole_MonitorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pi_hole_MonitorApp.swift; sourceTree = "<group>"; };
+		13E1BD222A37AEC100C9888A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		13E1BD242A37AEC200C9888A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		13E1BD272A37AEC200C9888A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		13E1BD292A37AEC200C9888A /* Raspi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Raspi.swift; sourceTree = "<group>"; };
+		13E1BD2B2A37AEC200C9888A /* Pi_hole_Monitor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Pi_hole_Monitor.entitlements; sourceTree = "<group>"; };
+		13E1BD362A38FCDD00C9888A /* RaspiDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaspiDetailView.swift; sourceTree = "<group>"; };
+		13E1BD3B2A3A069E00C9888A /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		13E1BD3E2A3A4CEF00C9888A /* DashBoardCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashBoardCardView.swift; sourceTree = "<group>"; };
+		13E756212A3DD1DE00B09504 /* DashBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashBoardView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		13E1BD1A2A37AEC100C9888A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		13E1BD142A37AEC100C9888A = {
+			isa = PBXGroup;
+			children = (
+				13E1BD1F2A37AEC100C9888A /* Pi-hole Monitor */,
+				13E1BD1E2A37AEC100C9888A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		13E1BD1E2A37AEC100C9888A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				13E1BD1D2A37AEC100C9888A /* Pi-hole Monitor.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		13E1BD1F2A37AEC100C9888A /* Pi-hole Monitor */ = {
+			isa = PBXGroup;
+			children = (
+				13E1BD202A37AEC100C9888A /* Pi_hole_MonitorApp.swift */,
+				13E1BD312A38F68D00C9888A /* View */,
+				13E1BD322A38F69600C9888A /* ViewModel */,
+				13E1BD332A38F69E00C9888A /* Model */,
+				13E1BD3D2A3A06A200C9888A /* Service */,
+				13E1BD242A37AEC200C9888A /* Assets.xcassets */,
+				13E1BD2B2A37AEC200C9888A /* Pi_hole_Monitor.entitlements */,
+				13E1BD262A37AEC200C9888A /* Preview Content */,
+			);
+			path = "Pi-hole Monitor";
+			sourceTree = "<group>";
+		};
+		13E1BD262A37AEC200C9888A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				13E1BD272A37AEC200C9888A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		13E1BD312A38F68D00C9888A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				13E1BD222A37AEC100C9888A /* ContentView.swift */,
+				13E1BD362A38FCDD00C9888A /* RaspiDetailView.swift */,
+				13E756212A3DD1DE00B09504 /* DashBoardView.swift */,
+				13E1BD3E2A3A4CEF00C9888A /* DashBoardCardView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		13E1BD322A38F69600C9888A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		13E1BD332A38F69E00C9888A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				13E1BD292A37AEC200C9888A /* Raspi.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		13E1BD3D2A3A06A200C9888A /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				13E1BD3B2A3A069E00C9888A /* DataService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		13E1BD1C2A37AEC100C9888A /* Pi-hole Monitor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13E1BD2E2A37AEC200C9888A /* Build configuration list for PBXNativeTarget "Pi-hole Monitor" */;
+			buildPhases = (
+				13E1BD192A37AEC100C9888A /* Sources */,
+				13E1BD1A2A37AEC100C9888A /* Frameworks */,
+				13E1BD1B2A37AEC100C9888A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pi-hole Monitor";
+			productName = "Pi-hole Monitor";
+			productReference = 13E1BD1D2A37AEC100C9888A /* Pi-hole Monitor.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		13E1BD152A37AEC100C9888A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					13E1BD1C2A37AEC100C9888A = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = 13E1BD182A37AEC100C9888A /* Build configuration list for PBXProject "Pi-hole Monitor" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 13E1BD142A37AEC100C9888A;
+			productRefGroup = 13E1BD1E2A37AEC100C9888A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				13E1BD1C2A37AEC100C9888A /* Pi-hole Monitor */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		13E1BD1B2A37AEC100C9888A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13E1BD282A37AEC200C9888A /* Preview Assets.xcassets in Resources */,
+				13E1BD252A37AEC200C9888A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		13E1BD192A37AEC100C9888A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13E1BD232A37AEC100C9888A /* ContentView.swift in Sources */,
+				13E756222A3DD1DE00B09504 /* DashBoardView.swift in Sources */,
+				13E1BD372A38FCDD00C9888A /* RaspiDetailView.swift in Sources */,
+				13E1BD2A2A37AEC200C9888A /* Raspi.swift in Sources */,
+				13E1BD3F2A3A4CEF00C9888A /* DashBoardCardView.swift in Sources */,
+				13E1BD212A37AEC100C9888A /* Pi_hole_MonitorApp.swift in Sources */,
+				13E1BD3C2A3A069E00C9888A /* DataService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		13E1BD2C2A37AEC200C9888A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		13E1BD2D2A37AEC200C9888A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		13E1BD2F2A37AEC200C9888A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Pi-hole Monitor/Pi_hole_Monitor.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Pi-hole Monitor/Preview Content\"";
+				DEVELOPMENT_TEAM = FYCU8V48BB;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dev-doshi.Pi-hole-Monitor";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		13E1BD302A37AEC200C9888A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Pi-hole Monitor/Pi_hole_Monitor.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Pi-hole Monitor/Preview Content\"";
+				DEVELOPMENT_TEAM = FYCU8V48BB;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dev-doshi.Pi-hole-Monitor";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		13E1BD182A37AEC100C9888A /* Build configuration list for PBXProject "Pi-hole Monitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13E1BD2C2A37AEC200C9888A /* Debug */,
+				13E1BD2D2A37AEC200C9888A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13E1BD2E2A37AEC200C9888A /* Build configuration list for PBXNativeTarget "Pi-hole Monitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13E1BD2F2A37AEC200C9888A /* Debug */,
+				13E1BD302A37AEC200C9888A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 13E1BD152A37AEC100C9888A /* Project object */;
+}
